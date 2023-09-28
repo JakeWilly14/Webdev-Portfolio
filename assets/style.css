@@ -1,0 +1,226 @@
+:root {
+    --code-font: 'Fira Code', monospace;
+    --css-font-color: #af8529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/AltBG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(4,9,30,0.7);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+h1 {
+    font-size: 56px;
+    font-family: var(--code-font);
+    color: var(--css-font-color);
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--Code-font);
+}
+
+.nav-links ul li:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(170, 0, 170);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 90%;
+    transform: scale(1.15);
+}
+
+nav i {
+    display: none;
+}
+
+nav .fa,
+nav .fas {
+    display: none;
+}
+
+.sub-title {
+    font: var(--code-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.sub-title h2 {
+    margin: 20px 20px 30px;
+    text-align: center;
+    font-size: 42px;
+    color: var(--css-font-color);
+    text-decoration: none;
+}
+
+.sub-title p {
+    text-align: center;
+    margin: 10px 0 40px;
+    font-size: 22px;
+    color: rgb(24, 138, 231);
+}
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    font: var(--code-font);
+    margin-top: 60px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.content h2 {
+    margin: 20px;
+    font-size: 40px;
+    color: var(--css-font-color);
+    display: flex;
+    justify-content: center;
+}
+
+.content p {
+    color: white;
+    font-size: 24px;
+    width: 400px;
+    text-align: center;
+    line-height: 35px;
+    margin: 20px 20px 20px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+
+.content img {
+    width: 180px;
+    height: 200px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(24, 138, 231);
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+#about-me, #projects, #contact {
+    margin-bottom: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: -50px;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    border: 3px solid rgb(24, 138, 231);
+    border-radius: 5px;
+}
+/* HOVER OVER SECTION TO ENLARGE PROJECTS IMAGE */
+#git-logo {
+    background-color: rgba(255,255,255,.25);
+    transition: .25s;
+}
+
+#projects:hover #git-logo {
+    transform: scale(1.1);
+}
+
+#projects i {
+    font-size: 30px;
+    color: white;
+    margin: 0 0 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(4,9,30,0.7);
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+    color: var(--css-font-color);
+    font-size: 24px;
+}
+
+@media (max-width: 700px) {
+    .name {
+        font-size: 36px;
+    }
+
+    .sub-title h2 {
+        font-size: 28px;
+    }
+
+    .sub-title p {
+        max-width: 75%;
+        font-size: 20px;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+        line-height: 80px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: rgb(78, 78, 78);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa,
+    nav .fas {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}

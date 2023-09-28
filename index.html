@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Charles William's Web Development Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Fullstack portfolio" content="Charles Williams">
+
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/6d52ddf369.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <h1>
+                #<em>CharlesWilliams</em>
+            </h1>
+<!-- DIV CLASS FOR CSS DIV ID FOR JAVASCRIPT -->
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="file:///C:/Users/jakew/bootcamp/Webdev-Portfolio/index.html">
+                            HOME</a></li>
+                    <li>
+                        <a href="#about-me">
+                            ABOUT</a></li>
+                    <li>
+                        <a href="#projects">
+                            PROJECTS</a></li>
+                    <li>
+                        <a href="#contact">
+                            CONTACT</a></li>
+                </ul>
+            </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section>
+        <div class="sub-title">
+            <h2>
+                &lt;FULL STACK PORTFOLIO&gt;          
+            </h2>
+            <p>
+            "A consistently updated web browser 
+            displaying all of my web developing projects."          
+            </p>
+        </div>
+    </section>
+
+    <main class="content">
+        
+        <section id="about-me">
+            <h2>
+                About Me
+            </h2>
+            <img src=
+                "assets/images/20230830_143023.jpg" alt="Charles Williams Web Developer">
+            <p>
+                Hello! I am currently a bootcamp student in the KU Fullstack development coding class.
+                I am very excited to see where this future in coding will take me. For now though, i will
+                continue to advance my skills and display them here for you to see! 
+            </p>
+        </section>
+<!-- JS ONLICK ADDED FOR INCREASED CLICK AREA -->
+        <section id="projects" onclick="location.href='https://github.com/JakeWilly14?tab=repositories';" style="cursor: pointer;">
+            <h2>
+                Projects
+            </h2>
+            <img id=git-logo src=
+                "assets/images/Githublogo.jpg" alt="Github Logo">
+            <p>
+                Link to my various coding repositories on Github!<br>
+                Work in progress
+            </p>
+            <i class="fa-solid fa-wrench"></i>
+        </section>
+
+        <section id="contact">
+            <h2>
+                Contact
+            </h2>
+            <p>
+                Email me: <br> <a href="mailto:jakewilly@gmail.com"> jakewilly14@gmail.com</a>
+                <br>
+                Or get in touch with me at my DEV community<a href="https://dev.to/jakew14"> Profile</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <marquee>Hope You Enjoy! Thank you!</marquee>
+        </p>
+    </footer>
+
+<!-- JAVASCRIPT TOGGLE MENU FOR SMALLER SCREENS -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu () {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu () {
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+                
+
+    
