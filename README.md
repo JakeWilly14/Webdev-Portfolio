@@ -17,7 +17,11 @@ jakewilly14@gmail.com
 # Usage
 
 You will be able to click the link to my Portfolio here:
-   "url"
+   "https://jakewilly14.github.io/Webdev-Portfolio/"
+
+    
+   ![deployed_screenshot](https://github.com/JakeWilly14/Webdev-Portfolio/assets/144076139/b8a25273-74f3-46f6-96d1-eff6b4d5872b)
+
 
 ## License
 
