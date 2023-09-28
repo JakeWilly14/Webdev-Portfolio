@@ -1,55 +1,28 @@
-# Project Title
-
-Simple overview of use/purpose.
+# CHARLES WILLIAM'S WEB DEVELOPER PORTFOLIO
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+This is a project that was developed to display information about myself along with my web developing work and contact information.
+It was created using HTML and CSS elements with small amount of Javascript for mobile accessbility. 
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+N/A
 
 ## Authors
 
-Contributors names and contact info
+Charles Williams
+jakewilly14@gmail.com
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+# Usage
 
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+You will be able to click the link to my Portfolio here:
+   "url"
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+MIT License
 
 ## Acknowledgments
+
+The staff at KU coding bootcamp for guiding the learning process of my web developing skills!
